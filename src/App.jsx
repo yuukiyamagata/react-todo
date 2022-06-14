@@ -52,6 +52,7 @@ export const App = () => {
       onChange={ onChangeTodoText }
       onClick={ onClickAdd }
       todoText={ todoText }
+      disabled = { incompleteTodos.length >= 5 }
     />
     { incompleteTodos.length >= 5 &&
     <p style={{ color: 'red'}}>
